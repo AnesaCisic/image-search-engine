@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #131842;
+    color: #fff;
+}
+
+.text {
+    margin: 80px auto 40px auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    margin-top: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+    color: #E8F0FE;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 60px;
+    background: #E8F0FE;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+form input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #131842;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+form button {
+    padding: 0 40px;
+    height: 100%;
+    background: #fd6239;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+::placeholder{
+    color: #131842;
+    font-size: 18px;
+}
+
+#show-more-btn {
+    background: #fd6239;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+}
+
+button:hover {
+    background: #E68369;
+}
+
+.photo-grid {
+    margin-top: 24px;
+    padding: 40px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 280px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+}
+
+footer {
+    width: 100%;
+    height: 36px;
+    background: #E8F0FE;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    color: grey;
+}
+
+@media screen and (max-width: 600px) {
+    .photo-grid {
+        padding: 20px;
+    }
+}
+
